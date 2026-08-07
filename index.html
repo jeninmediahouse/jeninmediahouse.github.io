@@ -1,10 +1,299 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jenin Media House</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jenin Media House | Translation & Media Services</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            line-height: 1.6;
+            background: #ffffff;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #d1d5db;
+        }
+
+        .hero {
+            min-height: 520px;
+            background: linear-gradient(135deg, #111827, #374151);
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+        }
+
+        .hero-content {
+            max-width: 760px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #e5e7eb;
+            margin-bottom: 32px;
+            max-width: 650px;
+        }
+
+        .button {
+            display: inline-block;
+            background: white;
+            color: #111827;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 75px 8%;
+        }
+
+        section h2 {
+            font-size: 34px;
+            margin-bottom: 18px;
+            color: #111827;
+        }
+
+        .intro {
+            max-width: 850px;
+            font-size: 18px;
+            color: #4b5563;
+        }
+
+        .services {
+            background: #f3f4f6;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .service {
+            background: white;
+            padding: 30px;
+            border-radius: 7px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .service h3 {
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        .service p {
+            color: #4b5563;
+        }
+
+        .languages {
+            text-align: center;
+        }
+
+        .languages p {
+            font-size: 20px;
+            color: #4b5563;
+        }
+
+        .contact {
+            background: #111827;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            color: #d1d5db;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #080d17;
+            color: #9ca3af;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                display: block;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 0 18px 0 0;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Jenin Media House</h1>
-    <p>Welcome to our official website.</p>
+
+<header>
+    <div class="logo">JENIN MEDIA HOUSE</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#languages">Languages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Language, Media & Communication Without Borders</h1>
+
+        <p>
+            Jenin Media House provides professional translation,
+            media, consulting, and cross-cultural communication services
+            connecting Morocco, the Arab world, and international clients.
+        </p>
+
+        <a class="button" href="#contact">Contact Us</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Jenin Media House</h2>
+
+    <p class="intro">
+        Jenin Media House is a Morocco-based media and language services
+        company providing professional translation, communication,
+        consulting, and media support to individuals, organizations,
+        businesses, and international clients.
+    </p>
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-grid">
+
+        <div class="service">
+            <h3>Translation Services</h3>
+            <p>
+                Professional translation services for documents,
+                business communications, media materials, and other
+                multilingual content.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Certified & Sworn Translation</h3>
+            <p>
+                Assistance with certified and sworn translations
+                through qualified professional translators for
+                official and administrative documents.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Media Services</h3>
+            <p>
+                Media research, content development, communication
+                support, and multilingual media projects.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Consulting</h3>
+            <p>
+                Cross-cultural and practical consulting services
+                for individuals and organizations working between
+                Morocco and international markets.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Expatriate Assistance</h3>
+            <p>
+                Communication and practical support for international
+                residents and businesses navigating services in Morocco.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Research & Documentation</h3>
+            <p>
+                Research assistance, document preparation,
+                multilingual correspondence, and information services.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="languages" id="languages">
+    <h2>Languages</h2>
+
+    <p>
+        Arabic &nbsp; • &nbsp; English &nbsp; • &nbsp; French
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Jenin Media House</h2>
+
+    <p>Casablanca – Nouaceur, Morocco</p>
+    <p>Professional inquiries and service requests are welcome.</p>
+</section>
+
+<footer>
+    © 2026 Jenin Media House. All Rights Reserved.
+</footer>
+
 </body>
 </html>
