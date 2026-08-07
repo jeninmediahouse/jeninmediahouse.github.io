@@ -175,12 +175,22 @@
             .service-grid {
                 grid-template-columns: 1fr;
             }
-        }
+   .about-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.about-text {
+    flex: 1;
+}
+
     .about-photo {
     width: 100%;
     max-width: 500px;
     height: 280px;
-    object-fit: cover;
+        object-fit: cover;
     object-position: center;
     border-radius: 8px;
     display: block;
@@ -220,15 +230,24 @@
 </section>
 
 <section id="about">
-    <h2>About Jenin Media House</h2>
+    <div class="about-layout">
 
-    <p class="intro">
-        Jenin Media House is a Morocco-based media and language services
-        company providing professional translation, communication,
-        consulting, and media support to individuals, organizations,
-        businesses, and international clients.
-    </p>
-    <img src="IMG_2526.jpeg" alt="Archives and research at Jenin Media House" class="about-photo">
+        <div class="about-text">
+            <h2>About Jenin Media House</h2>
+
+            <p class="intro">
+                Jenin Media House is a Morocco-based media and language services
+                company providing professional translation, communication,
+                consulting, and media support to individuals, organizations,
+                businesses, and international clients.
+            </p>
+        </div>
+
+        <img src="IMG_2526.jpeg"
+             alt="Archives and research at Jenin Media House"
+             class="about-photo">
+
+    </div>
 </section>
 
 <section class="services" id="services">
