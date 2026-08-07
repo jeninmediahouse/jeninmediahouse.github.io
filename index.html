@@ -125,13 +125,37 @@
         }
 
         .languages {
-            text-align: center;
-        }
+    text-align: center;
+}
 
-        .languages p {
-            font-size: 20px;
-            color: #4b5563;
-        }
+.language-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.language-item {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 22px 35px;
+    min-width: 150px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.language-item strong {
+    display: block;
+    font-size: 18px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.language-item span {
+    display: block;
+    font-size: 16px;
+    color: #4b5563;
+}
 
         .contact {
             background: #111827;
@@ -340,9 +364,22 @@
 <section class="languages" id="languages">
     <h2>Languages</h2>
 
-    <p>
-        Arabic &nbsp; • &nbsp; English &nbsp; • &nbsp; French
-    </p>
+   <div class="language-list">
+    <div class="language-item">
+        <strong>Arabic</strong>
+        <span>العربية</span>
+    </div>
+
+    <div class="language-item">
+        <strong>English</strong>
+        <span>English</span>
+    </div>
+
+    <div class="language-item">
+        <strong>French</strong>
+        <span>Français</span>
+    </div>
+</div> 
 </section>
 
 <section class="contact" id="contact">
