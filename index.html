@@ -356,26 +356,68 @@
             padding: 25px;
             font-size: 14px;
         }
+#about {
+    background: #f7f7f5;
+    padding: 85px 8% 95px;
+    position: relative;
+    overflow: hidden;
+}
+
+#about h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    color: #111827;
+    margin: 0 0 42px;
+    position: relative;
+    display: inline-block;
+}
+
+#about h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    margin-top: 12px;
+    background: linear-gradient(
+        90deg,
+        #d62828 0%,
+        #d62828 42%,
+        #ffffff 42%,
+        #ffffff 58%,
+        #198754 58%,
+        #198754 100%
+    );
+}
+
 .about-layout {
     display: flex;
-    align-items: flex-start;
-    gap: 50px;
-   margin-top: 8px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
 }
 
 .about-text {
     flex: 1;
-    max-width: 600px;
+    max-width: 610px;
+}
+
+.about-text .intro {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #374151;
+    margin: 0;
 }
 
 .about-photo {
-    width: 500px;
-    height: 280px;
+    width: 520px;
+    height: 330px;
     object-fit: cover;
     object-position: center;
-    border-radius: 8px;
+    border-radius: 12px;
     display: block;
     margin: 0;
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    box-shadow: 0 18px 45px rgba(17, 24, 39, 0.14);
 }
       .hero-accent {
     color: #c1272d;
